@@ -5,6 +5,9 @@
         "moduleResolution": "nodenext",
     },
     "include": [
+        "config/**/*.ts",
+        "plugins/**/*.ts",
+        "plugins/**/*.tsx",
         "index.ts",
     ],
     "exclude": [

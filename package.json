@@ -2,15 +2,21 @@
   "name": "stackpress-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "plugins": [
+    "./plugins/app/plugin",
+    "stackpress"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "stackpress serve --b config/develop -v"
   },
   "keywords": [],
   "author": "cdsiats",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
+  "private": true,
   "dependencies": {
+    "dotenv": "^17.2.0",
     "frui": "0.1.8",
     "react": "19.1.0",
     "react-dom": "19.1.0",
